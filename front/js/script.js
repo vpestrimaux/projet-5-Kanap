@@ -10,9 +10,9 @@ fetch(url)
         article.innerHTML += 
           `<a href="./product.html?id=42">
           <article>
-            <img src="${kanap.imageUrl}" alt="Lorem ipsum dolor sit amet, Kanap name1">
+            <img src="${kanap.imageUrl}" alt="${kanap.altTxt}">
             <h3 class="productName">${kanap.name}</h3>
-            <p class="productDescription">Dis enim malesuada risus sapien gravida nulla nisl arcu. Dis enim malesuada risus sapien gravida nulla nisl arcu.</p>
+            <p class="productDescription">${kanap.description}</p>
           </article>
         </a>`;       
       }
