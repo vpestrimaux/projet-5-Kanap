@@ -6,9 +6,10 @@ fetch(url)
   .then(response => response.json())
   .then(data => {    
     for (let kanap of data)
-      {        
+      {   
+        console.log (kanap);     
         article.innerHTML += 
-          `<a href="./product.html?id=42">
+          `<a href="./product.html?id=${kanap._id}">
           <article>
             <img src="${kanap.imageUrl}" alt="${kanap.altTxt}">
             <h3 class="productName">${kanap.name}</h3>
